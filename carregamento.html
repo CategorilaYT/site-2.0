@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thigos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #loading-container {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+    }
+
+    #loading-circle {
+      width: 80px;
+      height: 80px;
+      border: 8px solid #3498db;
+      border-top: 8px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    #footer {
+      background-color: #3498db;
+      color: black;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+    
+  <div id="loading-container">
+    <div id="loading-circle"></div>
+  </div>
+  <div id="footer">
+    <p>Carregamento Seguro. &copy; 2023 categorila.github.io/Site-2.0/</p>
+  </div>
+    <script>
+    // Redireciona para a segunda página após 3 segundos
+    setTimeout(function() {
+        window.location.href = 'site-fake.html';
+    }, 3000);
+</script>
+</body>
+</html>
+

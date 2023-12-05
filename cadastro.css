@@ -1,0 +1,62 @@
+.sistema {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(83, 83, 83);
+}
+
+.signup-login-container {
+    display: flex;
+}
+
+.signup-container,
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.titulo {
+    margin-top: -300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragrafo {
+    font-family: Arial, Helvetica, sans-serif;
+}

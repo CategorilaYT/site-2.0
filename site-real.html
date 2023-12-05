@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Bonita</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.cards {
+    font-family: 'Arial', sans-serif;
+    margin: 20px; /* Adicionando margem para espaçamento da borda da tela */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: space-around;
+    background-color: #f4f4f4;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px; /* Espaçamento entre os cards ajustado */
+    transition: 0.5s;
+    flex: 1; /* Permite que os cards ocupem espaço igualmente */
+    max-width: 300px; /* Largura máxima para evitar que os cards fiquem muito largos */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card a:hover {
+    background-color: #45a049;
+}
+
+.paragrafo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0; /* Adicionando margem abaixo do parágrafo */
+}
+
+.updates-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    .update {
+        margin-bottom: 20px;
+    }
+
+    .update h2 {
+        color: #333;
+    }
+
+    .date {
+        color: #666;
+        font-style: italic;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Categorila</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="site-real.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cards">
+        
+    <div class="card">
+        <img src="img/bmw-m3-coupe-gtr-2001-003-20211028174956-1600x1066_Easy-Resize.com.jpg" alt="Imagem do Card 1">
+        <div class="card-content">
+            <h3>Need For Speed Most Wanted 2005</h3>
+            <p>Need For Speed Most Wanted, criado em 2005, jogo de corrida e perseguição policial.</p>
+            <a href="nfs-card.html">Baixar agora</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/unnamed.png" alt="Imagem do Card 2">
+        <div class="card-content">
+            <h3>Sonic The Hedgehog</h3>
+            <p>Sonic the Hedgehog é uma franquia de mídia criada e administrada por Yuji Naka e Naoto Oshima da equipe Sonic Team, da Sega. O primeiro jogo da série Sonic.</p>
+            <a href="sonic.html">Baixar agora</a>
+        </div>
+    </div>
+
+    </section>
+
+    <div class="updates-container">
+        <div class="update">
+            <h2>Atualização 1</h2>
+            <p class="date">Data: 04 de dezembro 2023</p>
+            <ul>
+                <li>Cards modificados. Melhor aparência.</li>
+                <li>Corrigido problemas de login.</li>
+                <li>Aparência melhorada na tela de apertar o botão de login.</li>
+            </ul>
+        </div>
+    
+        <div class="update">
+            <h2>Atualização 2</h2>
+            <p class="date">Data:</p>
+            <ul>
+                <li>Em breve.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Conteúdo da página aqui -->
+    <div class="paragrafo">
+        <p>Site 1.0, havera mais coisas ainda.</p>
+    </div>    
+
+</body>
+</html>

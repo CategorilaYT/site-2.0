@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Sistema de Cadastro e Login</title>
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>---> Sempre lembre de sua senha e nome. Coloque qualquer Usuario que você lembre. Não irá funcionar se cadastrar o mesmo nome várias vezes.</h1>
+    </div>
+
+    <div class="sistema">
+        <div class="signup-login-container">
+            <div class="signup-container">
+                <h2>Cadastro</h2>
+                <form id="signup-form">
+                    <label for="signup-username">Usuário:</label>
+                    <input type="text" id="signup-username" name="signup-username" required>
+    
+                    <label for="signup-password">Senha:</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+    
+                    <button type="button" onclick="signup()">Cadastrar</button>
+                </form>
+            </div>
+    
+            <div class="login-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="login-username">Usuário:</label>
+                    <input type="text" id="login-username" name="login-username" required>
+    
+                    <label for="login-password">Senha:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+    
+                    <button type="button" onclick="login()">Entrar</button>
+                </form>
+                <p id="error-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <p class="paragrafo">Sistema em Beta 1.0. 2023</p>
+
+
+
+    <script
+        src="cadastro.js">
+    </script>
+
+</body>
+</html>
